@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="card" id="panelUsuario" style="display: none;">
+        <h1>¡Hola, <span id="nombreUser"></span>!</h1>
+
+        <p class="info-text">Has iniciado sesión correctamente.</p>
+
+        <div class="box-sistema">
+            <small>Mensaje del sistema:</small><br>
+            <strong id="msgSistema">Cargando...</strong><br><br>
+            <small>Hora de conexión:</small><br>
+            <strong id="horaServer">--:--</strong>
+        </div>
+
+        <button onclick="logout()" class="btn-logout">Cerrar Sesión</button>
+    </div>
+
+    <script src="js/bienvenido.js"></script>
+</body>
+
+</html>
